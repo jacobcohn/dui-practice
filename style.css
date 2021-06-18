@@ -7,7 +7,7 @@ body {
   width: 100vw;
   min-height: 100vh;
   display: grid;
-  grid-template-rows: 1fr 11fr;
+  grid-template-rows: 60px 1fr;
 }
 
 #dropDownMenuDiv {
@@ -16,4 +16,51 @@ body {
 
 #imageSliderDiv {
   grid-area: 2 / 1 / 3 / 2;
+}
+
+/* code that is past here will be switched to a different file */
+
+#menuContainer {
+  width: 100%;
+  height: 100%;
+  background: lightgray;
+  display: flex;
+  flex-direction: row;
+}
+
+.menuTitleDiv {
+  width: 150px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menuTitleContent {
+  font-size: 30px;
+  margin: 0px;
+  cursor: default;
+}
+
+.menuItemsDiv {
+  position: absolute;
+  width: 150px;
+}
+
+.menuItemDiv {
+  width: 150px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menuItemDiv:hover {
+  background: lightgray;
+}
+
+.menuItemContent {
+  font-size: 20px;
+  height: 20px;
+  cursor: default;
 }
