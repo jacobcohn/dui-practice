@@ -1,0 +1,19 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+#container {
+  width: 100vw;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 11fr;
+}
+
+#dropDownMenuDiv {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+#imageSliderDiv {
+  grid-area: 2 / 1 / 3 / 2;
+}
