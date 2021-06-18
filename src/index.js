@@ -9,6 +9,8 @@ Things that I need to do:
  */
 
 const main = (() => {
+  const dropDownMenuDiv = document.getElementById('dropDownMenuDiv');
+
   const menuItems = [
     ['Nature', ['Yellowstone', 'Grand Canyon', 'Lake Tahoe']],
     ['Cities', ['New York', 'Los Angeles', 'Chicago', 'San Francisco']],
@@ -16,7 +18,7 @@ const main = (() => {
   ];
 
   const initiate = () => {
-    createDropDownMenu(menuItems); // eventually change to createDropDownMenu.something(menuItems)
+    dropDownMenuDiv.appendChild(createDropDownMenu.initiate(menuItems));
   };
 
   return { initiate };
