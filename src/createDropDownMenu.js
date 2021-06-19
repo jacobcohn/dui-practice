@@ -16,6 +16,7 @@ const dom = (() => {
   const createOneMenuItem = (menuItemName) => {
     const menuItemDiv = document.createElement('div');
     menuItemDiv.classList.toggle('menuItemDiv');
+    menuItemDiv.value = menuItemName;
 
     const menuItemContent = document.createElement('h2');
     menuItemContent.classList.toggle('menuItemContent');
@@ -40,7 +41,7 @@ const dom = (() => {
   const menuContainer = document.createElement('div');
   menuContainer.id = 'menuContainer';
 
-  const createMenuOption = (menuOption) => {
+  const createOneMenuOption = (menuOption) => {
     const menuOptionDiv = document.createElement('div');
     menuOptionDiv.classList.toggle('menuOptionDiv');
     menuOptionDiv.appendChild(createMenuTitle(menuOption[0]));
@@ -48,10 +49,12 @@ const dom = (() => {
     menuContainer.appendChild(menuOptionDiv);
   };
 
+  const createMenuOptions = (menuOptions) => {
+    menuOptions.forEach((menuOption) => createOneMenuOption(menuOption));
+  };
+
   const initiate = (allMenuOptions) => {
-    allMenuOptions.forEach((menuOption) => {
-      createMenuOption(menuOption);
-    });
+    createMenuOptions(allMenuOptions);
 
     return menuContainer;
   };
@@ -72,11 +75,13 @@ const logic = (() => {
     menuOption.addEventListener('mouseleave', (e) => hoverEffectFunction(e));
   };
 
-  const initiate = (menuContainer) => {
+  const findAndCallFunctionForAllMenuOptions = (menuContainer) => {
     const allMenuOptions = menuContainer.querySelectorAll('.menuOptionDiv');
-    allMenuOptions.forEach((menuOption) => {
-      addHoverEffect(menuOption);
-    });
+    allMenuOptions.forEach((menuOption) => addHoverEffect(menuOption));
+  };
+
+  const initiate = (menuContainer) => {
+    findAndCallFunctionForAllMenuOptions(menuContainer);
   };
 
   return { initiate };

@@ -1,4 +1,5 @@
 import createDropDownMenu from './createDropDownMenu';
+import events from './events';
 
 /*
 Things that I need to do:
@@ -19,6 +20,7 @@ const main = (() => {
 
   const initiate = () => {
     dropDownMenuDiv.appendChild(createDropDownMenu.initiate(menuItems));
+    events.initiate();
   };
 
   return { initiate };
