@@ -47,6 +47,14 @@ body {
   width: 150px;
 }
 
+.visible {
+  display: default;
+}
+
+.notVisible {
+  display: none;
+}
+
 .menuItemDiv {
   width: 150px;
   height: 50px;
