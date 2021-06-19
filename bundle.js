@@ -60,23 +60,13 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
-/***/ "./src/events.js":
-/*!***********************!*\
-  !*** ./src/events.js ***!
-  \***********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst main = (() => {\n  const changeImageSliderTitle = (title) => {\n    const imageSliderTitle = document.getElementById('imageSliderTitleContent');\n    imageSliderTitle.textContent = title;\n  };\n\n  const addEventListenerToMenuItem = (menuItem) => {\n    menuItem.addEventListener('click', () => {\n      changeImageSliderTitle(menuItem.value);\n      // changeImageSlider(menuItem.value);\n    });\n  };\n\n  const findAndCallFunctionForAllMenuItems = () => {\n    const allMenuItems = document.querySelectorAll('.menuItemDiv');\n    allMenuItems.forEach((menuItem) => addEventListenerToMenuItem(menuItem));\n  };\n\n  const initiate = () => {\n    findAndCallFunctionForAllMenuItems();\n  };\n\n  return { initiate };\n})();\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (main);\n\n\n//# sourceURL=webpack://dui-practice/./src/events.js?");
-
-/***/ }),
-
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _createDropDownMenu__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./createDropDownMenu */ \"./src/createDropDownMenu.js\");\n/* harmony import */ var _events__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./events */ \"./src/events.js\");\n\n\n\n/*\nThings that I need to do:\n- initiate\n- when a menuItem is clicked\n- sources button is clicked\n\n */\n\nconst main = (() => {\n  const dropDownMenuDiv = document.getElementById('dropDownMenuDiv');\n\n  const menuItems = [\n    ['Nature', ['Yellowstone', 'Grand Canyon', 'Lake Tahoe']],\n    ['Cities', ['New York', 'Los Angeles', 'Chicago', 'San Francisco']],\n    ['Pets', ['Dogs', 'Cats', 'Fish']],\n  ];\n\n  const initiate = () => {\n    dropDownMenuDiv.appendChild(_createDropDownMenu__WEBPACK_IMPORTED_MODULE_0__.default.initiate(menuItems));\n    _events__WEBPACK_IMPORTED_MODULE_1__.default.initiate();\n  };\n\n  return { initiate };\n})();\n\nmain.initiate();\n\n\n//# sourceURL=webpack://dui-practice/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _createDropDownMenu__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./createDropDownMenu */ \"./src/createDropDownMenu.js\");\n\n\n/*\nThings that I need to do:\n- initiate\n- when a menuItem is clicked\n- sources button is clicked\n */\n\nconst dropDownMenu = (() => {\n  const dropDownMenuDiv = document.getElementById('dropDownMenuDiv');\n\n  const menuItems = [\n    ['Nature', ['Yellowstone', 'Grand Canyon', 'Lake Tahoe']],\n    ['Cities', ['New York', 'Los Angeles', 'Chicago', 'San Francisco']],\n    ['Pets', ['Dogs', 'Cats', 'Fish']],\n  ];\n\n  const initiate = () => {\n    dropDownMenuDiv.appendChild(_createDropDownMenu__WEBPACK_IMPORTED_MODULE_0__.default.initiate(menuItems));\n  };\n\n  return { initiate };\n})();\n\nconst imageSlider = (() => {\n  const changeImageSliderTitle = (title) => {\n    const imageSliderTitle = document.getElementById('imageSliderTitleContent');\n    imageSliderTitle.textContent = title;\n  };\n\n  const addEventListenerToMenuItem = (menuItem) => {\n    menuItem.addEventListener('click', () => {\n      changeImageSliderTitle(menuItem.value);\n      // changeImageSlider(menuItem.value);\n    });\n  };\n\n  const findAndCallFunctionForAllMenuItems = () => {\n    const allMenuItems = document.querySelectorAll('.menuItemDiv');\n    allMenuItems.forEach((menuItem) => addEventListenerToMenuItem(menuItem));\n  };\n\n  const initiate = () => {\n    findAndCallFunctionForAllMenuItems();\n  };\n\n  return { initiate };\n})();\n\nconst main = (() => {\n  const initiate = () => {\n    dropDownMenu.initiate();\n    imageSlider.initiate();\n  };\n\n  return { initiate };\n})();\n\nmain.initiate();\n\n\n//# sourceURL=webpack://dui-practice/./src/index.js?");
 
 /***/ })
 
