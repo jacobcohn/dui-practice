@@ -1,3 +1,5 @@
+import './createDropDownMenu.css';
+
 const dom = (() => {
   const createMenuTitle = (menuTitle) => {
     const menuTitleDiv = document.createElement('div');
