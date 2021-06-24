@@ -7,7 +7,7 @@ body {
   width: 100vw;
   min-height: 100vh;
   display: grid;
-  grid-template-rows: 60px 150px 1fr;
+  grid-template-rows: 60px 100px 550px auto;
 }
 
 #dropDownMenuDiv {
@@ -20,7 +20,7 @@ body {
   height: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
 }
 
 #imageSliderTitleContent {
@@ -30,4 +30,26 @@ body {
 
 #imageSliderDiv {
   grid-area: 3 / 1 / 4 / 2;
+  display: grid;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#imageSliderContent {
+  width: 700px;
+  height: 500px;
+  margin: 25px;
+  background: black;
+}
+
+#imageSliderCreditDiv {
+  grid-area: 4 / 1 / 5 / 2;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+#imageSliderCreditContent {
+  font-size: 25px;
+  height: 25px;
 }
