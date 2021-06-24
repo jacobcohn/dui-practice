@@ -1,4 +1,5 @@
 import createDropDownMenu from './createDropDownMenu';
+// import imagesAndLinks from './imagesAndLinksArray';
 
 const dropDownMenu = (() => {
   const initiate = () => {
