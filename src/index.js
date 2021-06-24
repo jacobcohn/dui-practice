@@ -1,22 +1,15 @@
 import createDropDownMenu from './createDropDownMenu';
 
-/*
-Things that I need to do:
-- initiate
-- when a menuItem is clicked
-- sources button is clicked
- */
-
 const dropDownMenu = (() => {
-  const dropDownMenuDiv = document.getElementById('dropDownMenuDiv');
-
-  const menuItems = [
-    ['Nature', ['Yellowstone', 'Grand Canyon', 'Lake Tahoe']],
-    ['Cities', ['New York', 'Los Angeles', 'Chicago', 'San Francisco']],
-    ['Pets', ['Dogs', 'Cats', 'Fish']],
-  ];
-
   const initiate = () => {
+    const dropDownMenuDiv = document.getElementById('dropDownMenuDiv');
+
+    const menuItems = [
+      ['Nature', ['Yellowstone', 'Grand Canyon', 'Lake Tahoe']],
+      ['Cities', ['New York', 'Los Angeles', 'Chicago', 'San Francisco']],
+      ['Pets', ['Dogs', 'Cats', 'Fish']],
+    ];
+
     dropDownMenuDiv.appendChild(createDropDownMenu.initiate(menuItems));
   };
 
@@ -24,25 +17,35 @@ const dropDownMenu = (() => {
 })();
 
 const imageSlider = (() => {
-  const changeImageSliderTitle = (title) => {
-    const imageSliderTitle = document.getElementById('imageSliderTitleContent');
-    imageSliderTitle.textContent = title;
+  const createImageSliderRequirements = () => {
+    // code here
   };
 
-  const addEventListenerToMenuItem = (menuItem) => {
-    menuItem.addEventListener('click', () => {
-      changeImageSliderTitle(menuItem.value);
-      // changeImageSlider(menuItem.value);
-    });
+  const imageSliderFunctions = (arrayName) => {
+    const changeImageSliderTitle = (title) => {
+      const imageSliderTitle = document.getElementById(
+        'imageSliderTitleContent',
+      );
+      imageSliderTitle.textContent = title;
+    };
+
+    changeImageSliderTitle(arrayName);
+    // changeImageSlider(arrayName);
   };
 
   const findAndCallFunctionForAllMenuItems = () => {
     const allMenuItems = document.querySelectorAll('.menuItemDiv');
-    allMenuItems.forEach((menuItem) => addEventListenerToMenuItem(menuItem));
+    allMenuItems.forEach((menuItem) => {
+      menuItem.addEventListener('click', () => {
+        imageSliderFunctions(menuItem.value);
+      });
+    });
   };
 
   const initiate = () => {
+    createImageSliderRequirements();
     findAndCallFunctionForAllMenuItems();
+    // imageSliderFunctions(YellowStone);
   };
 
   return { initiate };
