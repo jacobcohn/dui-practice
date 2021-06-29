@@ -1,5 +1,5 @@
 import createDropDownMenu from './createDropDownMenu';
-// import imagesAndLinks from './imagesAndLinksArray';
+import createImageSlider from './createImageSlider';
 
 const dropDownMenu = (() => {
   const initiate = () => {
@@ -18,10 +18,6 @@ const dropDownMenu = (() => {
 })();
 
 const imageSlider = (() => {
-  const createImageSliderRequirements = () => {
-    // code here
-  };
-
   const imageSliderFunctions = (arrayName) => {
     const changeImageSliderTitle = (title) => {
       const imageSliderTitle = document.getElementById(
@@ -30,8 +26,12 @@ const imageSlider = (() => {
       imageSliderTitle.textContent = title;
     };
 
+    const changeImageSliderContent = (title) => {
+      createImageSlider.initiate(title);
+    };
+
     changeImageSliderTitle(arrayName);
-    // changeImageSlider(arrayName);
+    changeImageSliderContent(arrayName);
   };
 
   const findAndCallFunctionForAllMenuItems = () => {
@@ -44,7 +44,6 @@ const imageSlider = (() => {
   };
 
   const initiate = () => {
-    createImageSliderRequirements();
     findAndCallFunctionForAllMenuItems();
     // imageSliderFunctions(YellowStone);
   };
