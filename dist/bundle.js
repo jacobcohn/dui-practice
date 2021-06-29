@@ -20,6 +20,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/createImageSlider.css":
+/*!*************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/createImageSlider.css ***!
+  \*************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);\n// Imports\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"#imageSliderContent {\\n  width: 100%;\\n  height: 100%;\\n  display: flex;\\n  overflow: hidden;\\n}\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://dui-practice/./src/createImageSlider.css?./node_modules/css-loader/dist/cjs.js");
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/runtime/api.js":
 /*!*****************************************************!*\
   !*** ./node_modules/css-loader/dist/runtime/api.js ***!
@@ -37,6 +47,16 @@ eval("\n\n/*\n  MIT License http://www.opensource.org/licenses/mit-license.php\n
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_cjs_js_createDropDownMenu_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../node_modules/css-loader/dist/cjs.js!./createDropDownMenu.css */ \"./node_modules/css-loader/dist/cjs.js!./src/createDropDownMenu.css\");\n\n            \n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_createDropDownMenu_css__WEBPACK_IMPORTED_MODULE_1__.default, options);\n\n\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_createDropDownMenu_css__WEBPACK_IMPORTED_MODULE_1__.default.locals || {});\n\n//# sourceURL=webpack://dui-practice/./src/createDropDownMenu.css?");
+
+/***/ }),
+
+/***/ "./src/createImageSlider.css":
+/*!***********************************!*\
+  !*** ./src/createImageSlider.css ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_cjs_js_createImageSlider_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../node_modules/css-loader/dist/cjs.js!./createImageSlider.css */ \"./node_modules/css-loader/dist/cjs.js!./src/createImageSlider.css\");\n\n            \n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_createImageSlider_css__WEBPACK_IMPORTED_MODULE_1__.default, options);\n\n\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_createImageSlider_css__WEBPACK_IMPORTED_MODULE_1__.default.locals || {});\n\n//# sourceURL=webpack://dui-practice/./src/createImageSlider.css?");
 
 /***/ }),
 
@@ -66,7 +86,67 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// import elements from './elements';\n\nconst main = (() => {\n  const initiate = () => {};\n\n  return { initiate };\n})();\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (main);\n\n\n//# sourceURL=webpack://dui-practice/./src/createImageSlider.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _elements__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./elements */ \"./src/elements.js\");\n/* harmony import */ var _createImageSlider_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./createImageSlider.css */ \"./src/createImageSlider.css\");\n\n\n\n/*\n  find the correct array \n  two things: imageSliderContent and creditLink\n*/\n\nconst initialDom = (() => {\n  const clearImageSliderContainer = () => {\n    while (_elements__WEBPACK_IMPORTED_MODULE_0__.default.imageSliderContainer.firstChild) {\n      _elements__WEBPACK_IMPORTED_MODULE_0__.default.imageSliderContainer.removeChild(\n        _elements__WEBPACK_IMPORTED_MODULE_0__.default.imageSliderContainer.firstChild,\n      );\n    }\n  };\n\n  const addImageSliderContent = () => {\n    const imageSliderContent = document.createElement('div');\n    imageSliderContent.id = 'imageSliderContent';\n    _elements__WEBPACK_IMPORTED_MODULE_0__.default.imageSliderContainer.appendChild(imageSliderContent);\n  };\n\n  const addImagesToImageSliderContent = (specificArray) => {\n    const imageSliderContent = document.getElementById('imageSliderContent');\n\n    const addOneImage = (imageSrc, idName) => {\n      const image = document.createElement('img');\n      image.src = imageSrc;\n      image.id = idName;\n      imageSliderContent.appendChild(image);\n    };\n\n    const addEachImage = (array) => {\n      array.forEach((imageSrc) => {\n        const image = document.createElement('img');\n        image.src = imageSrc;\n        imageSliderContent.appendChild(image);\n      });\n    };\n\n    const imagesArray = specificArray.map((array) => array[0]);\n    addOneImage(imagesArray[imagesArray.length - 1], 'lastImageClone');\n    addEachImage(imagesArray);\n    addOneImage(imagesArray[0], 'firstImageClone');\n  };\n\n  const initiate = (specificArray) => {\n    clearImageSliderContainer();\n    addImageSliderContent();\n    addImagesToImageSliderContent(specificArray);\n  };\n\n  return { initiate };\n})();\n\nconst main = (() => {\n  const findSpecificArrayWithTitle = (title) => {\n    const finalArray = _elements__WEBPACK_IMPORTED_MODULE_0__.default.imagesAndLinksArray.find(\n      (array) => array[0] === title,\n    );\n    return finalArray[1];\n  };\n\n  const initiate = (title) => {\n    const specificArray = findSpecificArrayWithTitle(title);\n    initialDom.initiate(specificArray);\n  };\n\n  return { initiate };\n})();\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (main);\n\n// import elements from './elements';\n// import './createImageSlider.css';\n\n// /*\n//   find the correct array\n//   two things: imageSliderContent and creditLink\n// */\n\n// const initialDom = (() => {\n//   const imageSliderContent = document.createElement('div');\n//   imageSliderContent.id = 'imageSliderContent';\n\n//   const clearImageSliderContainer = () => {\n//     while (elements.imageSliderContainer.firstChild) {\n//       elements.imageSliderContainer.removeChild(\n//         elements.imageSliderContainer.firstChild,\n//       );\n//     }\n//     while (imageSliderContent.firstChild) {\n//       imageSliderContent.removeChild(imageSliderContent.firstChild);\n//     }\n//   };\n\n//   const appendImageSliderContent = () => {\n//     elements.imageSliderContainer.appendChild(imageSliderContent);\n//   };\n\n//   const addImagesToImageSliderContent = (specificArray) => {\n//     const addOneImage = (imageSrc, idName) => {\n//       const image = document.createElement('img');\n//       image.src = imageSrc;\n//       image.id = idName;\n//       imageSliderContent.appendChild(image);\n//     };\n\n//     const addEachImage = (array) => {\n//       array.forEach((imageSrc) => {\n//         const image = document.createElement('img');\n//         image.src = imageSrc;\n//         imageSliderContent.appendChild(image);\n//       });\n//     };\n\n//     const imagesArray = specificArray.map((array) => array[0]);\n//     addOneImage(imagesArray[imagesArray.length - 1], 'lastImageClone');\n//     addEachImage(imagesArray);\n//     addOneImage(imagesArray[0], 'firstImageClone');\n//   };\n\n//   const initiate = (specificArray) => {\n//     clearImageSliderContainer();\n//     appendImageSliderContent();\n//     addImagesToImageSliderContent(specificArray);\n//   };\n\n//   return { initiate };\n// })();\n\n// const main = (() => {\n//   const findSpecificArrayWithTitle = (title) => {\n//     const finalArray = elements.imagesAndLinksArray.find(\n//       (array) => array[0] === title,\n//     );\n//     return finalArray[1];\n//   };\n\n//   const initiate = (title) => {\n//     const specificArray = findSpecificArrayWithTitle(title);\n//     initialDom.initiate(specificArray);\n//   };\n\n//   return { initiate };\n// })();\n\n// export default main;\n\n\n//# sourceURL=webpack://dui-practice/./src/createImageSlider.js?");
+
+/***/ }),
+
+/***/ "./src/elements.js":
+/*!*************************!*\
+  !*** ./src/elements.js ***!
+  \*************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _imagesAndLinksArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./imagesAndLinksArray */ \"./src/imagesAndLinksArray.js\");\n\n\nconst createImageSliderRequirements = (() => {\n  const imageSliderContainer = document.getElementById('imageSliderContainer');\n  const creditLink = document.getElementById('creditLink');\n  const imagesAndLinksArray = _imagesAndLinksArray__WEBPACK_IMPORTED_MODULE_0__.default.array;\n  return { imageSliderContainer, creditLink, imagesAndLinksArray };\n})();\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (createImageSliderRequirements);\n\n\n//# sourceURL=webpack://dui-practice/./src/elements.js?");
+
+/***/ }),
+
+/***/ "./src/images/yellowstone/yellowstone1.png":
+/*!*************************************************!*\
+  !*** ./src/images/yellowstone/yellowstone1.png ***!
+  \*************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"b7237a92a5869582776c.png\";\n\n//# sourceURL=webpack://dui-practice/./src/images/yellowstone/yellowstone1.png?");
+
+/***/ }),
+
+/***/ "./src/images/yellowstone/yellowstone2.png":
+/*!*************************************************!*\
+  !*** ./src/images/yellowstone/yellowstone2.png ***!
+  \*************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"103b6c5875d60783d431.png\";\n\n//# sourceURL=webpack://dui-practice/./src/images/yellowstone/yellowstone2.png?");
+
+/***/ }),
+
+/***/ "./src/images/yellowstone/yellowstone3.png":
+/*!*************************************************!*\
+  !*** ./src/images/yellowstone/yellowstone3.png ***!
+  \*************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"286d3d044ddaffd88470.png\";\n\n//# sourceURL=webpack://dui-practice/./src/images/yellowstone/yellowstone3.png?");
+
+/***/ }),
+
+/***/ "./src/images/yellowstone/yellowstone4.png":
+/*!*************************************************!*\
+  !*** ./src/images/yellowstone/yellowstone4.png ***!
+  \*************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"07504c43529fe1600b11.png\";\n\n//# sourceURL=webpack://dui-practice/./src/images/yellowstone/yellowstone4.png?");
+
+/***/ }),
+
+/***/ "./src/imagesAndLinksArray.js":
+/*!************************************!*\
+  !*** ./src/imagesAndLinksArray.js ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _images_yellowstone_yellowstone1_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./images/yellowstone/yellowstone1.png */ \"./src/images/yellowstone/yellowstone1.png\");\n/* harmony import */ var _images_yellowstone_yellowstone2_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./images/yellowstone/yellowstone2.png */ \"./src/images/yellowstone/yellowstone2.png\");\n/* harmony import */ var _images_yellowstone_yellowstone3_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./images/yellowstone/yellowstone3.png */ \"./src/images/yellowstone/yellowstone3.png\");\n/* harmony import */ var _images_yellowstone_yellowstone4_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./images/yellowstone/yellowstone4.png */ \"./src/images/yellowstone/yellowstone4.png\");\n\n\n\n\n\nconst main = (() => {\n  const array = [\n    [\n      'Yellowstone',\n      [\n        [\n          _images_yellowstone_yellowstone1_png__WEBPACK_IMPORTED_MODULE_0__,\n          ['Nicolasintravel', 'https://unsplash.com/@nicolasintravel38'],\n        ],\n        [_images_yellowstone_yellowstone2_png__WEBPACK_IMPORTED_MODULE_1__, ['Lucas Gao', 'https://unsplash.com/@cestlucas']],\n        [_images_yellowstone_yellowstone3_png__WEBPACK_IMPORTED_MODULE_2__, ['Dan Meyers', 'https://unsplash.com/@dmey503']],\n        [_images_yellowstone_yellowstone4_png__WEBPACK_IMPORTED_MODULE_3__, ['Ashley Knedler', 'https://unsplash.com/@ashkned']],\n      ],\n    ],\n  ];\n\n  return { array };\n})();\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (main);\n\n\n//# sourceURL=webpack://dui-practice/./src/imagesAndLinksArray.js?");
 
 /***/ }),
 
@@ -131,6 +211,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _cre
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -145,6 +237,26 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _cre
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /************************************************************************/
