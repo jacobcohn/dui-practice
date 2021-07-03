@@ -45,7 +45,7 @@ const imageSlider = (() => {
 
   const initiate = () => {
     findAndCallFunctionForAllMenuItems();
-    // imageSliderFunctions(YellowStone);
+    imageSliderFunctions('Yellowstone');
   };
 
   return { initiate };

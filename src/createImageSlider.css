@@ -1,6 +1,57 @@
 #imageSliderContent {
+  position: relative;
   width: 100%;
   height: 100%;
   display: flex;
   overflow: hidden;
+}
+
+#transparentDiv {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 60px 1fr 60px;
+  grid-template-rows: 1fr 40px;
+  align-items: center;
+}
+
+.arrow {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 50px;
+}
+
+.arrow:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+#leftIconDiv {
+  grid-area: 1 / 1 / 3 / 2;
+  justify-self: flex-end;
+}
+
+#rightIconDiv {
+  grid-area: 1 / 3 / 3 / 4;
+  justify-self: flex-start;
+}
+
+#circlesDiv {
+  grid-area: 2 / 2 / 3 / 3;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  width: 8px;
+  height: 8px;
+  margin: 5px;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+.filled {
+  background-color: white;
 }

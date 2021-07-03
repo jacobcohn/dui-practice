@@ -40,10 +40,52 @@ const initialDom = (() => {
     addOneImage(imagesArray[0], 'firstImageClone');
   };
 
+  const addGraphicsToImageSliderContent = (specificArray) => {
+    // add transparentDiv
+    const transparentDiv = document.createElement('div');
+    transparentDiv.id = 'transparentDiv';
+    const imageSliderContent = document.getElementById('imageSliderContent');
+    imageSliderContent.appendChild(transparentDiv);
+
+    // add left icon
+    const leftIconDiv = document.createElement('div');
+    leftIconDiv.id = 'leftIconDiv';
+    transparentDiv.appendChild(leftIconDiv);
+    const leftIcon = document.createElement('i');
+    leftIcon.id = 'leftIcon';
+    leftIcon.classList.toggle('fas');
+    leftIcon.classList.toggle('fa-arrow-left');
+    leftIcon.classList.toggle('arrow');
+    leftIconDiv.appendChild(leftIcon);
+
+    // add right icon
+    const rightIconDiv = document.createElement('div');
+    rightIconDiv.id = 'rightIconDiv';
+    transparentDiv.appendChild(rightIconDiv);
+    const rightIcon = document.createElement('i');
+    rightIcon.id = 'rightIcon';
+    rightIcon.classList.toggle('fas');
+    rightIcon.classList.toggle('fa-arrow-right');
+    rightIcon.classList.toggle('arrow');
+    rightIconDiv.appendChild(rightIcon);
+
+    // add circles at bottom for knowing position
+    const circlesDiv = document.createElement('div');
+    circlesDiv.id = 'circlesDiv';
+    transparentDiv.appendChild(circlesDiv);
+    const numberOfCircles = specificArray.length;
+    for (let i = 0; i < numberOfCircles; i += 1) {
+      const circle = document.createElement('div');
+      circle.classList.toggle('circle');
+      circlesDiv.appendChild(circle);
+    }
+  };
+
   const initiate = (specificArray) => {
     clearImageSliderContainer();
     addImageSliderContent();
     addImagesToImageSliderContent(specificArray);
+    addGraphicsToImageSliderContent(specificArray);
   };
 
   return { initiate };
