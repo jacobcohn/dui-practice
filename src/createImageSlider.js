@@ -44,7 +44,7 @@ const initialDom = (() => {
     // add transparentDiv
     const transparentDiv = document.createElement('div');
     transparentDiv.id = 'transparentDiv';
-    const imageSliderContent = document.getElementById('imageSliderContent');
+    const imageSliderContent = document.getElementById('imageSliderContainer');
     imageSliderContent.appendChild(transparentDiv);
 
     // add left icon
@@ -76,6 +76,7 @@ const initialDom = (() => {
     const numberOfCircles = specificArray.length;
     for (let i = 0; i < numberOfCircles; i += 1) {
       const circle = document.createElement('div');
+      circle.id = `circle${i}`;
       circle.classList.toggle('circle');
       circlesDiv.appendChild(circle);
     }
@@ -86,6 +87,43 @@ const initialDom = (() => {
     addImageSliderContent();
     addImagesToImageSliderContent(specificArray);
     addGraphicsToImageSliderContent(specificArray);
+  };
+
+  return { initiate };
+})();
+
+const regularDom = (() => {
+  let slideCounter = 0;
+
+  const changeSlide = (specificArray) => {
+    changeImage();
+    checkSlideCounter(specificArray.length);
+    changeLink(specificArray);
+    changeFilledCircle(specificArray);
+  };
+
+  const events = (specificArray) => {
+    const leftArrow = document.getElementById('leftIcon');
+    leftArrow.addEventListener('click', () => {
+      slideCounter += -1;
+      changeSlide(specificArray);
+    });
+
+    const rightArrow = document.getElementById('rightIcon');
+    rightArrow.addEventListener('click', () => {
+      slideCounter += 1;
+      changeSlide(specificArray);
+    });
+
+    setInterval(() => {
+      slideCounter += 1;
+      changeSlide(specificArray);
+    }, 5000);
+  };
+
+  const initiate = (specificArray) => {
+    changeSlide(specificArray);
+    events(specificArray);
   };
 
   return { initiate };
@@ -102,6 +140,7 @@ const main = (() => {
   const initiate = (title) => {
     const specificArray = findSpecificArrayWithTitle(title);
     initialDom.initiate(specificArray);
+    regularDom.initiate(specificArray);
   };
 
   return { initiate };
