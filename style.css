@@ -1,6 +1,10 @@
 body {
+  color: #2D2529;
+  background-color: #F6F4F5;
   margin: 0px;
   padding: 0px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
 
 #container {
@@ -50,6 +54,14 @@ body {
 }
 
 #imageSliderCreditContent {
-  font-size: 25px;
-  height: 25px;
+  font-size: 27px;
+  height: 27px;
+}
+
+a {
+  color: #2D2529;
+}
+
+a:hover {
+  color: #917884;
 }
