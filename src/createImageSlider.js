@@ -94,35 +94,96 @@ const initialDom = (() => {
 
 const regularDom = (() => {
   let slideCounter = 0;
+  let allowedToChangeSlide = true;
+
+  const imageWidth = 700;
+  const transitionTime = 300;
+
+  const changeImageWithTransition = () => {
+    const amountOfPixelsTransformed = (slideCounter + 1) * imageWidth * -1;
+    const imageSliderContent = document.getElementById('imageSliderContent');
+    imageSliderContent.style.cssText = `
+      transform: translateX(${amountOfPixelsTransformed}px);
+      transition: ${transitionTime}ms;
+    `;
+    allowedToChangeSlide = false;
+    setTimeout(() => {
+      allowedToChangeSlide = true;
+    }, transitionTime);
+  };
+
+  const changeImageWithoutTransition = () => {
+    const amountOfPixelsTransformed = (slideCounter + 1) * imageWidth * -1;
+    const imageSliderContent = document.getElementById('imageSliderContent');
+    imageSliderContent.style.cssText = `
+      transform: translateX(${amountOfPixelsTransformed}px);
+    `;
+  };
+
+  const checkSlideCounter = (numberOfPhotos) => {
+    if (slideCounter === -1) {
+      slideCounter = numberOfPhotos - 1;
+      setTimeout(() => changeImageWithoutTransition(), transitionTime);
+    } else if (slideCounter === numberOfPhotos) {
+      slideCounter = 0;
+      setTimeout(() => changeImageWithoutTransition(), transitionTime);
+    }
+  };
+
+  const changeFilledCircle = () => {
+    const allCircles = Array.from(document.querySelectorAll('.circle'));
+    allCircles.forEach((circle) => {
+      if (circle.classList.contains('filled')) {
+        circle.classList.toggle('filled');
+      }
+    });
+
+    const specificCircleId = `circle${slideCounter}`;
+    const specificCircle = document.getElementById(specificCircleId);
+    specificCircle.classList.toggle('filled');
+  };
+
+  const changeLink = (specificArray) => {
+    const creditLinkTextContent = specificArray[slideCounter][1][0];
+    elements.creditLink.textContent = creditLinkTextContent;
+    const creditLinkActualLink = specificArray[slideCounter][1][1];
+    elements.creditLink.href = creditLinkActualLink;
+  };
 
   const changeSlide = (specificArray) => {
-    changeImage();
+    changeImageWithTransition();
     checkSlideCounter(specificArray.length);
+    changeFilledCircle();
     changeLink(specificArray);
-    changeFilledCircle(specificArray);
   };
 
   const events = (specificArray) => {
     const leftArrow = document.getElementById('leftIcon');
     leftArrow.addEventListener('click', () => {
-      slideCounter += -1;
-      changeSlide(specificArray);
+      if (allowedToChangeSlide === true) {
+        slideCounter += -1;
+        changeSlide(specificArray);
+      }
     });
 
     const rightArrow = document.getElementById('rightIcon');
     rightArrow.addEventListener('click', () => {
-      slideCounter += 1;
-      changeSlide(specificArray);
+      if (allowedToChangeSlide === true) {
+        slideCounter += 1;
+        changeSlide(specificArray);
+      }
     });
 
     setInterval(() => {
-      slideCounter += 1;
-      changeSlide(specificArray);
-    }, 5000);
+      if (allowedToChangeSlide === true) {
+        slideCounter += 1;
+        changeSlide(specificArray);
+      }
+    }, 6000);
   };
 
   const initiate = (specificArray) => {
-    changeSlide(specificArray);
+    changeSlide(specificArray); // transitionTime doesn't work bc it is the initial cssText
     events(specificArray);
   };
 
