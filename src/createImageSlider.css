@@ -22,12 +22,12 @@
 }
 
 .arrow {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(246, 244, 245, 0.75);
   font-size: 50px;
 }
 
 .arrow:hover {
-  color: rgba(255, 255, 255, 1);
+  color: rgba(246, 244, 245, 1);
 }
 
 #leftIconDiv {
@@ -50,13 +50,13 @@
 }
 
 .circle {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
   margin: 5px;
   border-radius: 50%;
-  border: 1px solid white;
+  border: 1px solid #F6F4F5;
 }
 
 .filled {
-  background-color: white;
+  background-color: #F6F4F5;
 }

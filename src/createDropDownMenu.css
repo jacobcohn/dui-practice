@@ -1,7 +1,9 @@
 #menuContainer {
   width: 100%;
   height: 100%;
-  background: lightgray;
+  background: #DED9DD;
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: row;
 }
@@ -36,13 +38,15 @@
 .menuItemDiv {
   width: 150px;
   height: 50px;
+  background: #F6F4F5;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .menuItemDiv:hover {
-  background: lightgray;
+  background: #EDE9EB;
+  text-decoration: underline;
 }
 
 .menuItemContent {
