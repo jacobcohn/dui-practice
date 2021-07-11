@@ -100,6 +100,166 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/images/cats/cats1.png":
+/*!***********************************!*\
+  !*** ./src/images/cats/cats1.png ***!
+  \***********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"3fe03f505e6cf37ed7a7.png\";\n\n//# sourceURL=webpack://dui-practice/./src/images/cats/cats1.png?");
+
+/***/ }),
+
+/***/ "./src/images/cats/cats2.png":
+/*!***********************************!*\
+  !*** ./src/images/cats/cats2.png ***!
+  \***********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"b0485c17cac4b20b9b5d.png\";\n\n//# sourceURL=webpack://dui-practice/./src/images/cats/cats2.png?");
+
+/***/ }),
+
+/***/ "./src/images/cats/cats3.png":
+/*!***********************************!*\
+  !*** ./src/images/cats/cats3.png ***!
+  \***********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"de660425c77ecddc5130.png\";\n\n//# sourceURL=webpack://dui-practice/./src/images/cats/cats3.png?");
+
+/***/ }),
+
+/***/ "./src/images/chicago/chicago1.png":
+/*!*****************************************!*\
+  !*** ./src/images/chicago/chicago1.png ***!
+  \*****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"9b8b780c1f3b796dba66.png\";\n\n//# sourceURL=webpack://dui-practice/./src/images/chicago/chicago1.png?");
+
+/***/ }),
+
+/***/ "./src/images/chicago/chicago2.png":
+/*!*****************************************!*\
+  !*** ./src/images/chicago/chicago2.png ***!
+  \*****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"9cbb4f54d317a292d628.png\";\n\n//# sourceURL=webpack://dui-practice/./src/images/chicago/chicago2.png?");
+
+/***/ }),
+
+/***/ "./src/images/chicago/chicago3.png":
+/*!*****************************************!*\
+  !*** ./src/images/chicago/chicago3.png ***!
+  \*****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"324fdc3ac93f35a3fc78.png\";\n\n//# sourceURL=webpack://dui-practice/./src/images/chicago/chicago3.png?");
+
+/***/ }),
+
+/***/ "./src/images/chicago/chicago4.png":
+/*!*****************************************!*\
+  !*** ./src/images/chicago/chicago4.png ***!
+  \*****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"bc9e7421d05d7d2efb6d.png\";\n\n//# sourceURL=webpack://dui-practice/./src/images/chicago/chicago4.png?");
+
+/***/ }),
+
+/***/ "./src/images/dogs/dogs1.png":
+/*!***********************************!*\
+  !*** ./src/images/dogs/dogs1.png ***!
+  \***********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"9ef3b997c3812f673702.png\";\n\n//# sourceURL=webpack://dui-practice/./src/images/dogs/dogs1.png?");
+
+/***/ }),
+
+/***/ "./src/images/dogs/dogs2.png":
+/*!***********************************!*\
+  !*** ./src/images/dogs/dogs2.png ***!
+  \***********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"0a3851ffab0c7e655348.png\";\n\n//# sourceURL=webpack://dui-practice/./src/images/dogs/dogs2.png?");
+
+/***/ }),
+
+/***/ "./src/images/dogs/dogs3.png":
+/*!***********************************!*\
+  !*** ./src/images/dogs/dogs3.png ***!
+  \***********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"5dd40d1bd27f1359dafd.png\";\n\n//# sourceURL=webpack://dui-practice/./src/images/dogs/dogs3.png?");
+
+/***/ }),
+
+/***/ "./src/images/dogs/dogs4.png":
+/*!***********************************!*\
+  !*** ./src/images/dogs/dogs4.png ***!
+  \***********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"081a99f7f1492beb60a0.png\";\n\n//# sourceURL=webpack://dui-practice/./src/images/dogs/dogs4.png?");
+
+/***/ }),
+
+/***/ "./src/images/dogs/dogs5.png":
+/*!***********************************!*\
+  !*** ./src/images/dogs/dogs5.png ***!
+  \***********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"31183022079eb5222acb.png\";\n\n//# sourceURL=webpack://dui-practice/./src/images/dogs/dogs5.png?");
+
+/***/ }),
+
+/***/ "./src/images/fish/fish1.png":
+/*!***********************************!*\
+  !*** ./src/images/fish/fish1.png ***!
+  \***********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"25feed103d7036d53909.png\";\n\n//# sourceURL=webpack://dui-practice/./src/images/fish/fish1.png?");
+
+/***/ }),
+
+/***/ "./src/images/fish/fish2.png":
+/*!***********************************!*\
+  !*** ./src/images/fish/fish2.png ***!
+  \***********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"a32022febf0fa1dde571.png\";\n\n//# sourceURL=webpack://dui-practice/./src/images/fish/fish2.png?");
+
+/***/ }),
+
+/***/ "./src/images/fish/fish3.png":
+/*!***********************************!*\
+  !*** ./src/images/fish/fish3.png ***!
+  \***********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"add9af7ee1b924e73a67.png\";\n\n//# sourceURL=webpack://dui-practice/./src/images/fish/fish3.png?");
+
+/***/ }),
+
+/***/ "./src/images/fish/fish4.png":
+/*!***********************************!*\
+  !*** ./src/images/fish/fish4.png ***!
+  \***********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"065a0b85e0efe9684155.png\";\n\n//# sourceURL=webpack://dui-practice/./src/images/fish/fish4.png?");
+
+/***/ }),
+
 /***/ "./src/images/grandCanyon/grandCanyon1.png":
 /*!*************************************************!*\
   !*** ./src/images/grandCanyon/grandCanyon1.png ***!
@@ -180,6 +340,36 @@ eval("module.exports = __webpack_require__.p + \"d1e183822c6de6adb54d.png\";\n\n
 
 /***/ }),
 
+/***/ "./src/images/losAngeles/losAngeles1.png":
+/*!***********************************************!*\
+  !*** ./src/images/losAngeles/losAngeles1.png ***!
+  \***********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"82642f6a991f9f7e5f01.png\";\n\n//# sourceURL=webpack://dui-practice/./src/images/losAngeles/losAngeles1.png?");
+
+/***/ }),
+
+/***/ "./src/images/losAngeles/losAngeles2.png":
+/*!***********************************************!*\
+  !*** ./src/images/losAngeles/losAngeles2.png ***!
+  \***********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"9fcd315ecdbe138bb9d0.png\";\n\n//# sourceURL=webpack://dui-practice/./src/images/losAngeles/losAngeles2.png?");
+
+/***/ }),
+
+/***/ "./src/images/losAngeles/losAngeles3.png":
+/*!***********************************************!*\
+  !*** ./src/images/losAngeles/losAngeles3.png ***!
+  \***********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"835538e09f55f9bfe506.png\";\n\n//# sourceURL=webpack://dui-practice/./src/images/losAngeles/losAngeles3.png?");
+
+/***/ }),
+
 /***/ "./src/images/newYork/newYork1.png":
 /*!*****************************************!*\
   !*** ./src/images/newYork/newYork1.png ***!
@@ -230,6 +420,46 @@ eval("module.exports = __webpack_require__.p + \"ca2d0a0b46f45338d973.png\";\n\n
 
 /***/ }),
 
+/***/ "./src/images/sanFrancisco/sanFrancisco1.png":
+/*!***************************************************!*\
+  !*** ./src/images/sanFrancisco/sanFrancisco1.png ***!
+  \***************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"abc2d90ae4f93a86ff6c.png\";\n\n//# sourceURL=webpack://dui-practice/./src/images/sanFrancisco/sanFrancisco1.png?");
+
+/***/ }),
+
+/***/ "./src/images/sanFrancisco/sanFrancisco2.png":
+/*!***************************************************!*\
+  !*** ./src/images/sanFrancisco/sanFrancisco2.png ***!
+  \***************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"3d04579947e01900d5ad.png\";\n\n//# sourceURL=webpack://dui-practice/./src/images/sanFrancisco/sanFrancisco2.png?");
+
+/***/ }),
+
+/***/ "./src/images/sanFrancisco/sanFrancisco3.png":
+/*!***************************************************!*\
+  !*** ./src/images/sanFrancisco/sanFrancisco3.png ***!
+  \***************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"45a4af31c8e5549abc06.png\";\n\n//# sourceURL=webpack://dui-practice/./src/images/sanFrancisco/sanFrancisco3.png?");
+
+/***/ }),
+
+/***/ "./src/images/sanFrancisco/sanFrancisco4.png":
+/*!***************************************************!*\
+  !*** ./src/images/sanFrancisco/sanFrancisco4.png ***!
+  \***************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"ba80a01727ab2ad5d5ef.png\";\n\n//# sourceURL=webpack://dui-practice/./src/images/sanFrancisco/sanFrancisco4.png?");
+
+/***/ }),
+
 /***/ "./src/images/yellowstone/yellowstone1.png":
 /*!*************************************************!*\
   !*** ./src/images/yellowstone/yellowstone1.png ***!
@@ -266,7 +496,7 @@ eval("module.exports = __webpack_require__.p + \"07504c43529fe1600b11.png\";\n\n
   \************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _images_yellowstone_yellowstone1_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./images/yellowstone/yellowstone1.png */ \"./src/images/yellowstone/yellowstone1.png\");\n/* harmony import */ var _images_yellowstone_yellowstone2_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./images/yellowstone/yellowstone2.png */ \"./src/images/yellowstone/yellowstone2.png\");\n/* harmony import */ var _images_yellowstone_yellowstone3_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./images/yellowstone/yellowstone3.png */ \"./src/images/yellowstone/yellowstone3.png\");\n/* harmony import */ var _images_grandCanyon_grandCanyon1_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./images/grandCanyon/grandCanyon1.png */ \"./src/images/grandCanyon/grandCanyon1.png\");\n/* harmony import */ var _images_grandCanyon_grandCanyon2_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./images/grandCanyon/grandCanyon2.png */ \"./src/images/grandCanyon/grandCanyon2.png\");\n/* harmony import */ var _images_grandCanyon_grandCanyon3_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./images/grandCanyon/grandCanyon3.png */ \"./src/images/grandCanyon/grandCanyon3.png\");\n/* harmony import */ var _images_grandCanyon_grandCanyon4_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./images/grandCanyon/grandCanyon4.png */ \"./src/images/grandCanyon/grandCanyon4.png\");\n/* harmony import */ var _images_lakeTahoe_lakeTahoe1_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./images/lakeTahoe/lakeTahoe1.png */ \"./src/images/lakeTahoe/lakeTahoe1.png\");\n/* harmony import */ var _images_lakeTahoe_lakeTahoe2_png__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./images/lakeTahoe/lakeTahoe2.png */ \"./src/images/lakeTahoe/lakeTahoe2.png\");\n/* harmony import */ var _images_lakeTahoe_lakeTahoe3_png__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./images/lakeTahoe/lakeTahoe3.png */ \"./src/images/lakeTahoe/lakeTahoe3.png\");\n/* harmony import */ var _images_lakeTahoe_lakeTahoe4_png__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./images/lakeTahoe/lakeTahoe4.png */ \"./src/images/lakeTahoe/lakeTahoe4.png\");\n/* harmony import */ var _images_newYork_newYork1_png__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./images/newYork/newYork1.png */ \"./src/images/newYork/newYork1.png\");\n/* harmony import */ var _images_newYork_newYork2_png__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./images/newYork/newYork2.png */ \"./src/images/newYork/newYork2.png\");\n/* harmony import */ var _images_newYork_newYork3_png__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./images/newYork/newYork3.png */ \"./src/images/newYork/newYork3.png\");\n/* harmony import */ var _images_newYork_newYork4_png__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./images/newYork/newYork4.png */ \"./src/images/newYork/newYork4.png\");\n/* harmony import */ var _images_newYork_newYork5_png__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./images/newYork/newYork5.png */ \"./src/images/newYork/newYork5.png\");\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nconst main = (() => {\n  const array = [\n    [\n      'Yellowstone',\n      [\n        [_images_yellowstone_yellowstone1_png__WEBPACK_IMPORTED_MODULE_0__, ['Lucas Gao', 'https://unsplash.com/@cestlucas']],\n        [_images_yellowstone_yellowstone2_png__WEBPACK_IMPORTED_MODULE_1__, ['Dan Meyers', 'https://unsplash.com/@dmey503']],\n        [_images_yellowstone_yellowstone3_png__WEBPACK_IMPORTED_MODULE_2__, ['Ashley Knedler', 'https://unsplash.com/@ashkned']],\n      ],\n    ],\n    [\n      'Grand Canyon',\n      [\n        [_images_grandCanyon_grandCanyon1_png__WEBPACK_IMPORTED_MODULE_3__, ['Alan Carrillo', 'https://unsplash.com/@acarrillo46']],\n        [_images_grandCanyon_grandCanyon2_png__WEBPACK_IMPORTED_MODULE_4__, ['Gert Boers', 'https://unsplash.com/@geboers']],\n        [_images_grandCanyon_grandCanyon3_png__WEBPACK_IMPORTED_MODULE_5__, ['Ammeer Basheer', 'https://unsplash.com/@24ameer']],\n        [_images_grandCanyon_grandCanyon4_png__WEBPACK_IMPORTED_MODULE_6__, ['Gilly', 'https://unsplash.com/@gillyberlin']],\n      ],\n    ],\n    [\n      'Lake Tahoe',\n      [\n        [_images_lakeTahoe_lakeTahoe1_png__WEBPACK_IMPORTED_MODULE_7__, ['Parth Thakker', 'https://unsplash.com/@thakkerparth16']],\n        [_images_lakeTahoe_lakeTahoe2_png__WEBPACK_IMPORTED_MODULE_8__, ['Mick Haupt', 'https://unsplash.com/@rocinante_11']],\n        [_images_lakeTahoe_lakeTahoe3_png__WEBPACK_IMPORTED_MODULE_9__, ['Mert Kahveci', 'https://unsplash.com/@mertkahveci']],\n        [_images_lakeTahoe_lakeTahoe4_png__WEBPACK_IMPORTED_MODULE_10__, ['Meritt Thomas', 'https://unsplash.com/@merittthomas']],\n      ],\n    ],\n    [\n      'New York',\n      [\n        [_images_newYork_newYork1_png__WEBPACK_IMPORTED_MODULE_11__, ['Luca Bravo', 'https://unsplash.com/@lucabravo']],\n        [_images_newYork_newYork2_png__WEBPACK_IMPORTED_MODULE_12__, ['Oliver Niblett', 'https://unsplash.com/@ojnibl']],\n        [_images_newYork_newYork3_png__WEBPACK_IMPORTED_MODULE_13__, ['Andre Benz', 'https://unsplash.com/@trapnation']],\n        [_images_newYork_newYork4_png__WEBPACK_IMPORTED_MODULE_14__, ['Redd', 'https://unsplash.com/@reddalec']],\n        [_images_newYork_newYork5_png__WEBPACK_IMPORTED_MODULE_15__, ['Jose Oh', 'https://unsplash.com/@joseoh']],\n      ],\n    ],\n    // [\n    //   'placeholder',\n    //   [\n    //     [placeholder1, ['', '']],\n    //     [placeholder2, ['', '']],\n    //     [placeholder3, ['', '']],\n    //     [placeholder4, ['', '']],\n    //   ],\n    // ],\n  ];\n\n  return { array };\n})();\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (main);\n\n\n//# sourceURL=webpack://dui-practice/./src/imagesAndLinksArray.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _images_yellowstone_yellowstone1_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./images/yellowstone/yellowstone1.png */ \"./src/images/yellowstone/yellowstone1.png\");\n/* harmony import */ var _images_yellowstone_yellowstone2_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./images/yellowstone/yellowstone2.png */ \"./src/images/yellowstone/yellowstone2.png\");\n/* harmony import */ var _images_yellowstone_yellowstone3_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./images/yellowstone/yellowstone3.png */ \"./src/images/yellowstone/yellowstone3.png\");\n/* harmony import */ var _images_grandCanyon_grandCanyon1_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./images/grandCanyon/grandCanyon1.png */ \"./src/images/grandCanyon/grandCanyon1.png\");\n/* harmony import */ var _images_grandCanyon_grandCanyon2_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./images/grandCanyon/grandCanyon2.png */ \"./src/images/grandCanyon/grandCanyon2.png\");\n/* harmony import */ var _images_grandCanyon_grandCanyon3_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./images/grandCanyon/grandCanyon3.png */ \"./src/images/grandCanyon/grandCanyon3.png\");\n/* harmony import */ var _images_grandCanyon_grandCanyon4_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./images/grandCanyon/grandCanyon4.png */ \"./src/images/grandCanyon/grandCanyon4.png\");\n/* harmony import */ var _images_lakeTahoe_lakeTahoe1_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./images/lakeTahoe/lakeTahoe1.png */ \"./src/images/lakeTahoe/lakeTahoe1.png\");\n/* harmony import */ var _images_lakeTahoe_lakeTahoe2_png__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./images/lakeTahoe/lakeTahoe2.png */ \"./src/images/lakeTahoe/lakeTahoe2.png\");\n/* harmony import */ var _images_lakeTahoe_lakeTahoe3_png__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./images/lakeTahoe/lakeTahoe3.png */ \"./src/images/lakeTahoe/lakeTahoe3.png\");\n/* harmony import */ var _images_lakeTahoe_lakeTahoe4_png__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./images/lakeTahoe/lakeTahoe4.png */ \"./src/images/lakeTahoe/lakeTahoe4.png\");\n/* harmony import */ var _images_newYork_newYork1_png__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./images/newYork/newYork1.png */ \"./src/images/newYork/newYork1.png\");\n/* harmony import */ var _images_newYork_newYork2_png__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./images/newYork/newYork2.png */ \"./src/images/newYork/newYork2.png\");\n/* harmony import */ var _images_newYork_newYork3_png__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./images/newYork/newYork3.png */ \"./src/images/newYork/newYork3.png\");\n/* harmony import */ var _images_newYork_newYork4_png__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./images/newYork/newYork4.png */ \"./src/images/newYork/newYork4.png\");\n/* harmony import */ var _images_newYork_newYork5_png__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./images/newYork/newYork5.png */ \"./src/images/newYork/newYork5.png\");\n/* harmony import */ var _images_losAngeles_losAngeles1_png__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./images/losAngeles/losAngeles1.png */ \"./src/images/losAngeles/losAngeles1.png\");\n/* harmony import */ var _images_losAngeles_losAngeles2_png__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./images/losAngeles/losAngeles2.png */ \"./src/images/losAngeles/losAngeles2.png\");\n/* harmony import */ var _images_losAngeles_losAngeles3_png__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./images/losAngeles/losAngeles3.png */ \"./src/images/losAngeles/losAngeles3.png\");\n/* harmony import */ var _images_chicago_chicago1_png__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./images/chicago/chicago1.png */ \"./src/images/chicago/chicago1.png\");\n/* harmony import */ var _images_chicago_chicago2_png__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./images/chicago/chicago2.png */ \"./src/images/chicago/chicago2.png\");\n/* harmony import */ var _images_chicago_chicago3_png__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./images/chicago/chicago3.png */ \"./src/images/chicago/chicago3.png\");\n/* harmony import */ var _images_chicago_chicago4_png__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./images/chicago/chicago4.png */ \"./src/images/chicago/chicago4.png\");\n/* harmony import */ var _images_sanFrancisco_sanFrancisco1_png__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./images/sanFrancisco/sanFrancisco1.png */ \"./src/images/sanFrancisco/sanFrancisco1.png\");\n/* harmony import */ var _images_sanFrancisco_sanFrancisco2_png__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./images/sanFrancisco/sanFrancisco2.png */ \"./src/images/sanFrancisco/sanFrancisco2.png\");\n/* harmony import */ var _images_sanFrancisco_sanFrancisco3_png__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./images/sanFrancisco/sanFrancisco3.png */ \"./src/images/sanFrancisco/sanFrancisco3.png\");\n/* harmony import */ var _images_sanFrancisco_sanFrancisco4_png__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./images/sanFrancisco/sanFrancisco4.png */ \"./src/images/sanFrancisco/sanFrancisco4.png\");\n/* harmony import */ var _images_dogs_dogs1_png__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./images/dogs/dogs1.png */ \"./src/images/dogs/dogs1.png\");\n/* harmony import */ var _images_dogs_dogs2_png__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./images/dogs/dogs2.png */ \"./src/images/dogs/dogs2.png\");\n/* harmony import */ var _images_dogs_dogs3_png__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./images/dogs/dogs3.png */ \"./src/images/dogs/dogs3.png\");\n/* harmony import */ var _images_dogs_dogs4_png__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./images/dogs/dogs4.png */ \"./src/images/dogs/dogs4.png\");\n/* harmony import */ var _images_dogs_dogs5_png__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./images/dogs/dogs5.png */ \"./src/images/dogs/dogs5.png\");\n/* harmony import */ var _images_cats_cats1_png__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./images/cats/cats1.png */ \"./src/images/cats/cats1.png\");\n/* harmony import */ var _images_cats_cats2_png__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./images/cats/cats2.png */ \"./src/images/cats/cats2.png\");\n/* harmony import */ var _images_cats_cats3_png__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./images/cats/cats3.png */ \"./src/images/cats/cats3.png\");\n/* harmony import */ var _images_fish_fish1_png__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./images/fish/fish1.png */ \"./src/images/fish/fish1.png\");\n/* harmony import */ var _images_fish_fish2_png__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./images/fish/fish2.png */ \"./src/images/fish/fish2.png\");\n/* harmony import */ var _images_fish_fish3_png__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./images/fish/fish3.png */ \"./src/images/fish/fish3.png\");\n/* harmony import */ var _images_fish_fish4_png__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ./images/fish/fish4.png */ \"./src/images/fish/fish4.png\");\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nconst main = (() => {\n  const array = [\n    [\n      'Yellowstone',\n      [\n        [_images_yellowstone_yellowstone1_png__WEBPACK_IMPORTED_MODULE_0__, ['Lucas Gao', 'https://unsplash.com/@cestlucas']],\n        [_images_yellowstone_yellowstone2_png__WEBPACK_IMPORTED_MODULE_1__, ['Dan Meyers', 'https://unsplash.com/@dmey503']],\n        [_images_yellowstone_yellowstone3_png__WEBPACK_IMPORTED_MODULE_2__, ['Ashley Knedler', 'https://unsplash.com/@ashkned']],\n      ],\n    ],\n    [\n      'Grand Canyon',\n      [\n        [_images_grandCanyon_grandCanyon1_png__WEBPACK_IMPORTED_MODULE_3__, ['Alan Carrillo', 'https://unsplash.com/@acarrillo46']],\n        [_images_grandCanyon_grandCanyon2_png__WEBPACK_IMPORTED_MODULE_4__, ['Gert Boers', 'https://unsplash.com/@geboers']],\n        [_images_grandCanyon_grandCanyon3_png__WEBPACK_IMPORTED_MODULE_5__, ['Ammeer Basheer', 'https://unsplash.com/@24ameer']],\n        [_images_grandCanyon_grandCanyon4_png__WEBPACK_IMPORTED_MODULE_6__, ['Gilly', 'https://unsplash.com/@gillyberlin']],\n      ],\n    ],\n    [\n      'Lake Tahoe',\n      [\n        [_images_lakeTahoe_lakeTahoe1_png__WEBPACK_IMPORTED_MODULE_7__, ['Parth Thakker', 'https://unsplash.com/@thakkerparth16']],\n        [_images_lakeTahoe_lakeTahoe2_png__WEBPACK_IMPORTED_MODULE_8__, ['Mick Haupt', 'https://unsplash.com/@rocinante_11']],\n        [_images_lakeTahoe_lakeTahoe3_png__WEBPACK_IMPORTED_MODULE_9__, ['Mert Kahveci', 'https://unsplash.com/@mertkahveci']],\n        [_images_lakeTahoe_lakeTahoe4_png__WEBPACK_IMPORTED_MODULE_10__, ['Meritt Thomas', 'https://unsplash.com/@merittthomas']],\n      ],\n    ],\n    [\n      'New York',\n      [\n        [_images_newYork_newYork1_png__WEBPACK_IMPORTED_MODULE_11__, ['Luca Bravo', 'https://unsplash.com/@lucabravo']],\n        [_images_newYork_newYork2_png__WEBPACK_IMPORTED_MODULE_12__, ['Oliver Niblett', 'https://unsplash.com/@ojnibl']],\n        [_images_newYork_newYork3_png__WEBPACK_IMPORTED_MODULE_13__, ['Andre Benz', 'https://unsplash.com/@trapnation']],\n        [_images_newYork_newYork4_png__WEBPACK_IMPORTED_MODULE_14__, ['Redd', 'https://unsplash.com/@reddalec']],\n        [_images_newYork_newYork5_png__WEBPACK_IMPORTED_MODULE_15__, ['Jose Oh', 'https://unsplash.com/@joseoh']],\n      ],\n    ],\n    [\n      'Los Angeles',\n      [\n        [_images_losAngeles_losAngeles1_png__WEBPACK_IMPORTED_MODULE_16__, ['Dillon Shook', 'https://unsplash.com/@dillonjshook']],\n        [_images_losAngeles_losAngeles2_png__WEBPACK_IMPORTED_MODULE_17__, ['Joseph Ngabo', 'https://unsplash.com/@jngabo']],\n        [_images_losAngeles_losAngeles3_png__WEBPACK_IMPORTED_MODULE_18__, ['Juliana Malta', 'https://unsplash.com/@julianamalta']],\n      ],\n    ],\n    [\n      'Chicago',\n      [\n        [_images_chicago_chicago1_png__WEBPACK_IMPORTED_MODULE_19__, ['Max Bender', 'https://unsplash.com/@maxwbender']],\n        [_images_chicago_chicago2_png__WEBPACK_IMPORTED_MODULE_20__, ['Sawyer Bengston', 'https://unsplash.com/@sawyerbengtson']],\n        [_images_chicago_chicago3_png__WEBPACK_IMPORTED_MODULE_21__, ['Neal Kharawala', 'https://unsplash.com/@nealk']],\n        [_images_chicago_chicago4_png__WEBPACK_IMPORTED_MODULE_22__, ['Andrew Seaman', 'https://unsplash.com/@amseaman']],\n      ],\n    ],\n    [\n      'San Francisco',\n      [\n        [_images_sanFrancisco_sanFrancisco1_png__WEBPACK_IMPORTED_MODULE_23__, ['Joonyeop Baek', 'https://unsplash.com/@jybaek']],\n        [_images_sanFrancisco_sanFrancisco2_png__WEBPACK_IMPORTED_MODULE_24__, ['Aaron Kato', 'https://unsplash.com/@aaronkato']],\n        [_images_sanFrancisco_sanFrancisco3_png__WEBPACK_IMPORTED_MODULE_25__, ['Ragnar Vorel', 'https://unsplash.com/@sonuba']],\n        [_images_sanFrancisco_sanFrancisco4_png__WEBPACK_IMPORTED_MODULE_26__, ['Jose Rago', 'https://unsplash.com/@ragojose']],\n      ],\n    ],\n    [\n      'Dogs',\n      [\n        [_images_dogs_dogs1_png__WEBPACK_IMPORTED_MODULE_27__, ['James Barker', 'https://unsplash.com/@barkernotbaker']],\n        [_images_dogs_dogs2_png__WEBPACK_IMPORTED_MODULE_28__, ['Alvan Nee', 'https://unsplash.com/@alvannee']],\n        [_images_dogs_dogs3_png__WEBPACK_IMPORTED_MODULE_29__, ['Anoir Chafik', 'https://unsplash.com/@anoirchafik']],\n        [_images_dogs_dogs4_png__WEBPACK_IMPORTED_MODULE_30__, ['Jenny Marvin', 'https://unsplash.com/@jennymarvin']],\n        [_images_dogs_dogs5_png__WEBPACK_IMPORTED_MODULE_31__, ['Rebekah Howell', 'https://unsplash.com/@rebekahhowell00']],\n      ],\n    ],\n    [\n      'Cats',\n      [\n        [_images_cats_cats1_png__WEBPACK_IMPORTED_MODULE_32__, ['Daria Shatova', 'https://unsplash.com/@dariasha911']],\n        [_images_cats_cats2_png__WEBPACK_IMPORTED_MODULE_33__, ['Lloyd Henneman', 'https://unsplash.com/@lloydhenneman']],\n        [_images_cats_cats3_png__WEBPACK_IMPORTED_MODULE_34__, ['Raquel Pedrotti', 'https://unsplash.com/@raquelpedrotti']],\n      ],\n    ],\n    [\n      'Fish',\n      [\n        [_images_fish_fish1_png__WEBPACK_IMPORTED_MODULE_35__, ['Rachel Hisko', 'https://unsplash.com/@rachelhisko']],\n        [_images_fish_fish2_png__WEBPACK_IMPORTED_MODULE_36__, ['David Clode', 'https://unsplash.com/@davidclode']],\n        [_images_fish_fish3_png__WEBPACK_IMPORTED_MODULE_37__, ['Worachat Sodsri', 'https://unsplash.com/@worachatsodsri']],\n        [_images_fish_fish4_png__WEBPACK_IMPORTED_MODULE_38__, ['Katherine McAdoo', 'https://unsplash.com/@ohaikatherine']],\n      ],\n    ],\n  ];\n\n  return { array };\n})();\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (main);\n\n\n//# sourceURL=webpack://dui-practice/./src/imagesAndLinksArray.js?");
 
 /***/ }),
 

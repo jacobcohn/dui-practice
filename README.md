@@ -1,5 +1,5 @@
 # Dynamic User Interfaces
 
-Live Preview: (will be put here when project is finished)
+Live Preview: hhttps://jcohn16.github.io/dui-practice/
 
 I created this project using HTML, CSS, and JavaScript.
