@@ -86,7 +86,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _elements__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./elements */ \"./src/elements.js\");\n/* harmony import */ var _createImageSlider_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./createImageSlider.css */ \"./src/createImageSlider.css\");\n\n\n\nconst initialDom = (() => {\n  const clearImageSliderContainer = () => {\n    while (_elements__WEBPACK_IMPORTED_MODULE_0__.default.imageSliderContainer.firstChild) {\n      _elements__WEBPACK_IMPORTED_MODULE_0__.default.imageSliderContainer.removeChild(\n        _elements__WEBPACK_IMPORTED_MODULE_0__.default.imageSliderContainer.firstChild,\n      );\n    }\n  };\n\n  const addImageSliderContent = () => {\n    const imageSliderContent = document.createElement('div');\n    imageSliderContent.id = 'imageSliderContent';\n    _elements__WEBPACK_IMPORTED_MODULE_0__.default.imageSliderContainer.appendChild(imageSliderContent);\n  };\n\n  const addImagesToImageSliderContent = (specificArray) => {\n    const imageSliderContent = document.getElementById('imageSliderContent');\n\n    const addOneImage = (imageSrc, idName) => {\n      const image = document.createElement('img');\n      image.src = imageSrc;\n      image.id = idName;\n      imageSliderContent.appendChild(image);\n    };\n\n    const addEachImage = (array) => {\n      array.forEach((imageSrc) => {\n        const image = document.createElement('img');\n        image.src = imageSrc;\n        imageSliderContent.appendChild(image);\n      });\n    };\n\n    const imagesArray = specificArray.map((array) => array[0]);\n    addOneImage(imagesArray[imagesArray.length - 1], 'lastImageClone');\n    addEachImage(imagesArray);\n    addOneImage(imagesArray[0], 'firstImageClone');\n  };\n\n  const addGraphicsToImageSliderContent = (specificArray) => {\n    // add transparentDiv\n    const transparentDiv = document.createElement('div');\n    transparentDiv.id = 'transparentDiv';\n    const imageSliderContent = document.getElementById('imageSliderContainer');\n    imageSliderContent.appendChild(transparentDiv);\n\n    // add left icon\n    const leftIconDiv = document.createElement('div');\n    leftIconDiv.id = 'leftIconDiv';\n    transparentDiv.appendChild(leftIconDiv);\n    const leftIcon = document.createElement('i');\n    leftIcon.id = 'leftIcon';\n    leftIcon.classList.toggle('fas');\n    leftIcon.classList.toggle('fa-arrow-left');\n    leftIcon.classList.toggle('arrow');\n    leftIconDiv.appendChild(leftIcon);\n\n    // add right icon\n    const rightIconDiv = document.createElement('div');\n    rightIconDiv.id = 'rightIconDiv';\n    transparentDiv.appendChild(rightIconDiv);\n    const rightIcon = document.createElement('i');\n    rightIcon.id = 'rightIcon';\n    rightIcon.classList.toggle('fas');\n    rightIcon.classList.toggle('fa-arrow-right');\n    rightIcon.classList.toggle('arrow');\n    rightIconDiv.appendChild(rightIcon);\n\n    // add circles at bottom for knowing position\n    const circlesDiv = document.createElement('div');\n    circlesDiv.id = 'circlesDiv';\n    transparentDiv.appendChild(circlesDiv);\n    const numberOfCircles = specificArray.length;\n    for (let i = 0; i < numberOfCircles; i += 1) {\n      const circle = document.createElement('div');\n      circle.id = `circle${i}`;\n      circle.classList.toggle('circle');\n      circlesDiv.appendChild(circle);\n    }\n  };\n\n  const initiate = (specificArray) => {\n    clearImageSliderContainer();\n    addImageSliderContent();\n    addImagesToImageSliderContent(specificArray);\n    addGraphicsToImageSliderContent(specificArray);\n  };\n\n  return { initiate };\n})();\n\nconst regularDom = (() => {\n  let slideCounter = 0;\n  let allowedToChangeSlide = true;\n\n  const imageWidth = 700;\n  const transitionTime = 300;\n\n  const changeImageWithTransition = () => {\n    const amountOfPixelsTransformed = (slideCounter + 1) * imageWidth * -1;\n    const imageSliderContent = document.getElementById('imageSliderContent');\n    imageSliderContent.style.cssText = `\n      transform: translateX(${amountOfPixelsTransformed}px);\n      transition: ${transitionTime}ms;\n    `;\n    allowedToChangeSlide = false;\n    setTimeout(() => {\n      allowedToChangeSlide = true;\n    }, transitionTime);\n  };\n\n  const changeImageWithoutTransition = () => {\n    const amountOfPixelsTransformed = (slideCounter + 1) * imageWidth * -1;\n    const imageSliderContent = document.getElementById('imageSliderContent');\n    imageSliderContent.style.cssText = `\n      transform: translateX(${amountOfPixelsTransformed}px);\n    `;\n  };\n\n  const checkSlideCounter = (numberOfPhotos) => {\n    if (slideCounter === -1) {\n      slideCounter = numberOfPhotos - 1;\n      setTimeout(() => changeImageWithoutTransition(), transitionTime);\n    } else if (slideCounter === numberOfPhotos) {\n      slideCounter = 0;\n      setTimeout(() => changeImageWithoutTransition(), transitionTime);\n    }\n  };\n\n  const changeFilledCircle = () => {\n    const allCircles = Array.from(document.querySelectorAll('.circle'));\n    allCircles.forEach((circle) => {\n      if (circle.classList.contains('filled')) {\n        circle.classList.toggle('filled');\n      }\n    });\n\n    const specificCircleId = `circle${slideCounter}`;\n    const specificCircle = document.getElementById(specificCircleId);\n    specificCircle.classList.toggle('filled');\n  };\n\n  const changeLink = (specificArray) => {\n    const creditLinkTextContent = specificArray[slideCounter][1][0];\n    _elements__WEBPACK_IMPORTED_MODULE_0__.default.creditLink.textContent = creditLinkTextContent;\n    const creditLinkActualLink = specificArray[slideCounter][1][1];\n    _elements__WEBPACK_IMPORTED_MODULE_0__.default.creditLink.href = creditLinkActualLink;\n  };\n\n  const changeSlide = (specificArray) => {\n    changeImageWithTransition();\n    checkSlideCounter(specificArray.length);\n    changeFilledCircle();\n    changeLink(specificArray);\n  };\n\n  const events = (specificArray) => {\n    const leftArrow = document.getElementById('leftIcon');\n    leftArrow.addEventListener('click', () => {\n      if (allowedToChangeSlide === true) {\n        slideCounter += -1;\n        changeSlide(specificArray);\n      }\n    });\n\n    const rightArrow = document.getElementById('rightIcon');\n    rightArrow.addEventListener('click', () => {\n      if (allowedToChangeSlide === true) {\n        slideCounter += 1;\n        changeSlide(specificArray);\n      }\n    });\n\n    setInterval(() => {\n      if (allowedToChangeSlide === true) {\n        slideCounter += 1;\n        changeSlide(specificArray);\n      }\n    }, 6000);\n  };\n\n  const initiate = (specificArray) => {\n    changeSlide(specificArray); // transitionTime doesn't work bc it is the initial cssText\n    events(specificArray);\n  };\n\n  return { initiate };\n})();\n\nconst main = (() => {\n  const findSpecificArrayWithTitle = (title) => {\n    const finalArray = _elements__WEBPACK_IMPORTED_MODULE_0__.default.imagesAndLinksArray.find(\n      (array) => array[0] === title,\n    );\n    return finalArray[1];\n  };\n\n  const initiate = (title) => {\n    const specificArray = findSpecificArrayWithTitle(title);\n    initialDom.initiate(specificArray);\n    regularDom.initiate(specificArray);\n  };\n\n  return { initiate };\n})();\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (main);\n\n\n//# sourceURL=webpack://dui-practice/./src/createImageSlider.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _elements__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./elements */ \"./src/elements.js\");\n/* harmony import */ var _createImageSlider_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./createImageSlider.css */ \"./src/createImageSlider.css\");\n\n\n\nconst initialDom = (() => {\n  const clearImageSliderContainer = () => {\n    while (_elements__WEBPACK_IMPORTED_MODULE_0__.default.imageSliderContainer.firstChild) {\n      _elements__WEBPACK_IMPORTED_MODULE_0__.default.imageSliderContainer.removeChild(\n        _elements__WEBPACK_IMPORTED_MODULE_0__.default.imageSliderContainer.firstChild,\n      );\n    }\n  };\n\n  const addImageSliderContent = () => {\n    const imageSliderContent = document.createElement('div');\n    imageSliderContent.id = 'imageSliderContent';\n    _elements__WEBPACK_IMPORTED_MODULE_0__.default.imageSliderContainer.appendChild(imageSliderContent);\n  };\n\n  const addImagesToImageSliderContent = (specificArray) => {\n    const imageSliderContent = document.getElementById('imageSliderContent');\n\n    const addOneImage = (imageSrc, idName) => {\n      const image = document.createElement('img');\n      image.src = imageSrc;\n      image.id = idName;\n      imageSliderContent.appendChild(image);\n    };\n\n    const addEachImage = (array) => {\n      array.forEach((imageSrc) => {\n        const image = document.createElement('img');\n        image.src = imageSrc;\n        imageSliderContent.appendChild(image);\n      });\n    };\n\n    const imagesArray = specificArray.map((array) => array[0]);\n    addOneImage(imagesArray[imagesArray.length - 1], 'lastImageClone');\n    addEachImage(imagesArray);\n    addOneImage(imagesArray[0], 'firstImageClone');\n  };\n\n  const addGraphicsToImageSliderContent = (specificArray) => {\n    // add transparentDiv\n    const transparentDiv = document.createElement('div');\n    transparentDiv.id = 'transparentDiv';\n    const imageSliderContent = document.getElementById('imageSliderContainer');\n    imageSliderContent.appendChild(transparentDiv);\n\n    // add left icon\n    const leftIconDiv = document.createElement('div');\n    leftIconDiv.id = 'leftIconDiv';\n    transparentDiv.appendChild(leftIconDiv);\n    const leftIcon = document.createElement('i');\n    leftIcon.id = 'leftIcon';\n    leftIcon.classList.toggle('fas');\n    leftIcon.classList.toggle('fa-arrow-left');\n    leftIcon.classList.toggle('arrow');\n    leftIconDiv.appendChild(leftIcon);\n\n    // add right icon\n    const rightIconDiv = document.createElement('div');\n    rightIconDiv.id = 'rightIconDiv';\n    transparentDiv.appendChild(rightIconDiv);\n    const rightIcon = document.createElement('i');\n    rightIcon.id = 'rightIcon';\n    rightIcon.classList.toggle('fas');\n    rightIcon.classList.toggle('fa-arrow-right');\n    rightIcon.classList.toggle('arrow');\n    rightIconDiv.appendChild(rightIcon);\n\n    // add circles at bottom for knowing position\n    const circlesDiv = document.createElement('div');\n    circlesDiv.id = 'circlesDiv';\n    transparentDiv.appendChild(circlesDiv);\n    const numberOfCircles = specificArray.length;\n    for (let i = 0; i < numberOfCircles; i += 1) {\n      const circle = document.createElement('div');\n      circle.id = `circle${i}`;\n      circle.classList.toggle('circle');\n      circlesDiv.appendChild(circle);\n    }\n  };\n\n  const initiate = (specificArray) => {\n    clearImageSliderContainer();\n    addImageSliderContent();\n    addImagesToImageSliderContent(specificArray);\n    addGraphicsToImageSliderContent(specificArray);\n  };\n\n  return { initiate };\n})();\n\nconst changeSlides = (() => {\n  let slideCounter;\n  let allowedToChangeSlide = true;\n\n  const imageWidth = 700;\n  const transitionTime = 300;\n\n  const resetSlideCounter = () => {\n    slideCounter = 0;\n  };\n\n  const changeImageWithTransition = () => {\n    const amountOfPixelsTransformed = (slideCounter + 1) * imageWidth * -1;\n    const imageSliderContent = document.getElementById('imageSliderContent');\n    imageSliderContent.style.cssText = `\n      transform: translateX(${amountOfPixelsTransformed}px);\n      transition: ${transitionTime}ms;\n    `;\n    allowedToChangeSlide = false;\n    setTimeout(() => {\n      allowedToChangeSlide = true;\n    }, transitionTime);\n  };\n\n  const changeImageWithoutTransition = () => {\n    const amountOfPixelsTransformed = (slideCounter + 1) * imageWidth * -1;\n    const imageSliderContent = document.getElementById('imageSliderContent');\n    imageSliderContent.style.cssText = `\n      transform: translateX(${amountOfPixelsTransformed}px);\n    `;\n  };\n\n  const checkSlideCounter = (numberOfPhotos) => {\n    if (slideCounter === -1) {\n      slideCounter = numberOfPhotos - 1;\n      setTimeout(() => changeImageWithoutTransition(), transitionTime);\n    } else if (slideCounter === numberOfPhotos) {\n      slideCounter = 0;\n      setTimeout(() => changeImageWithoutTransition(), transitionTime);\n    }\n  };\n\n  const changeFilledCircle = () => {\n    const allCircles = Array.from(document.querySelectorAll('.circle'));\n    allCircles.forEach((circle) => {\n      if (circle.classList.contains('filled')) {\n        circle.classList.toggle('filled');\n      }\n    });\n\n    const specificCircleId = `circle${slideCounter}`;\n    const specificCircle = document.getElementById(specificCircleId);\n    specificCircle.classList.toggle('filled');\n  };\n\n  const changeLink = (specificArray) => {\n    const creditLinkTextContent = specificArray[slideCounter][1][0];\n    _elements__WEBPACK_IMPORTED_MODULE_0__.default.creditLink.textContent = creditLinkTextContent;\n    const creditLinkActualLink = specificArray[slideCounter][1][1];\n    _elements__WEBPACK_IMPORTED_MODULE_0__.default.creditLink.href = creditLinkActualLink;\n  };\n\n  const changeSlide = (specificArray) => {\n    changeImageWithTransition();\n    checkSlideCounter(specificArray.length);\n    changeFilledCircle();\n    changeLink(specificArray);\n  };\n\n  const events = (specificArray) => {\n    const leftArrow = document.getElementById('leftIcon');\n    leftArrow.addEventListener('click', () => {\n      if (allowedToChangeSlide === true) {\n        slideCounter += -1;\n        changeSlide(specificArray);\n      }\n    });\n\n    const rightArrow = document.getElementById('rightIcon');\n    rightArrow.addEventListener('click', () => {\n      if (allowedToChangeSlide === true) {\n        slideCounter += 1;\n        changeSlide(specificArray);\n      }\n    });\n\n    const automaticallyChangeSlides = setInterval(() => {\n      if (allowedToChangeSlide === true) {\n        slideCounter += 1;\n        changeSlide(specificArray);\n      }\n    }, 4000);\n\n    const observer = new MutationObserver(() => {\n      clearInterval(automaticallyChangeSlides);\n      observer.disconnect();\n    });\n\n    observer.observe(_elements__WEBPACK_IMPORTED_MODULE_0__.default.imageSliderContainer, { childList: true });\n  };\n\n  const initiate = (specificArray) => {\n    resetSlideCounter();\n    changeSlide(specificArray);\n    events(specificArray);\n  };\n\n  return { initiate };\n})();\n\nconst main = (() => {\n  const findSpecificArrayWithTitle = (title) => {\n    const finalArray = _elements__WEBPACK_IMPORTED_MODULE_0__.default.imagesAndLinksArray.find(\n      (array) => array[0] === title,\n    );\n    return finalArray[1];\n  };\n\n  const initiate = (title) => {\n    const specificArray = findSpecificArrayWithTitle(title);\n    initialDom.initiate(specificArray);\n    changeSlides.initiate(specificArray);\n  };\n\n  return { initiate };\n})();\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (main);\n\n\n//# sourceURL=webpack://dui-practice/./src/createImageSlider.js?");
 
 /***/ }),
 
@@ -97,6 +97,136 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _imagesAndLinksArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./imagesAndLinksArray */ \"./src/imagesAndLinksArray.js\");\n\n\nconst createImageSliderRequirements = (() => {\n  const imageSliderContainer = document.getElementById('imageSliderContainer');\n  const creditLink = document.getElementById('creditLink');\n  const imagesAndLinksArray = _imagesAndLinksArray__WEBPACK_IMPORTED_MODULE_0__.default.array;\n  return { imageSliderContainer, creditLink, imagesAndLinksArray };\n})();\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (createImageSliderRequirements);\n\n\n//# sourceURL=webpack://dui-practice/./src/elements.js?");
+
+/***/ }),
+
+/***/ "./src/images/grandCanyon/grandCanyon1.png":
+/*!*************************************************!*\
+  !*** ./src/images/grandCanyon/grandCanyon1.png ***!
+  \*************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"3fa5dfd08d32955aa53e.png\";\n\n//# sourceURL=webpack://dui-practice/./src/images/grandCanyon/grandCanyon1.png?");
+
+/***/ }),
+
+/***/ "./src/images/grandCanyon/grandCanyon2.png":
+/*!*************************************************!*\
+  !*** ./src/images/grandCanyon/grandCanyon2.png ***!
+  \*************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"6e863da9c77c27a08d89.png\";\n\n//# sourceURL=webpack://dui-practice/./src/images/grandCanyon/grandCanyon2.png?");
+
+/***/ }),
+
+/***/ "./src/images/grandCanyon/grandCanyon3.png":
+/*!*************************************************!*\
+  !*** ./src/images/grandCanyon/grandCanyon3.png ***!
+  \*************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"995e32478119205ee405.png\";\n\n//# sourceURL=webpack://dui-practice/./src/images/grandCanyon/grandCanyon3.png?");
+
+/***/ }),
+
+/***/ "./src/images/grandCanyon/grandCanyon4.png":
+/*!*************************************************!*\
+  !*** ./src/images/grandCanyon/grandCanyon4.png ***!
+  \*************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"ec152e45b4813bdd61e2.png\";\n\n//# sourceURL=webpack://dui-practice/./src/images/grandCanyon/grandCanyon4.png?");
+
+/***/ }),
+
+/***/ "./src/images/lakeTahoe/lakeTahoe1.png":
+/*!*********************************************!*\
+  !*** ./src/images/lakeTahoe/lakeTahoe1.png ***!
+  \*********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"328bea01466b39f3d85c.png\";\n\n//# sourceURL=webpack://dui-practice/./src/images/lakeTahoe/lakeTahoe1.png?");
+
+/***/ }),
+
+/***/ "./src/images/lakeTahoe/lakeTahoe2.png":
+/*!*********************************************!*\
+  !*** ./src/images/lakeTahoe/lakeTahoe2.png ***!
+  \*********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"4da144f10caa9f3d97c8.png\";\n\n//# sourceURL=webpack://dui-practice/./src/images/lakeTahoe/lakeTahoe2.png?");
+
+/***/ }),
+
+/***/ "./src/images/lakeTahoe/lakeTahoe3.png":
+/*!*********************************************!*\
+  !*** ./src/images/lakeTahoe/lakeTahoe3.png ***!
+  \*********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"4e74560258fe3efefd3b.png\";\n\n//# sourceURL=webpack://dui-practice/./src/images/lakeTahoe/lakeTahoe3.png?");
+
+/***/ }),
+
+/***/ "./src/images/lakeTahoe/lakeTahoe4.png":
+/*!*********************************************!*\
+  !*** ./src/images/lakeTahoe/lakeTahoe4.png ***!
+  \*********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"d1e183822c6de6adb54d.png\";\n\n//# sourceURL=webpack://dui-practice/./src/images/lakeTahoe/lakeTahoe4.png?");
+
+/***/ }),
+
+/***/ "./src/images/newYork/newYork1.png":
+/*!*****************************************!*\
+  !*** ./src/images/newYork/newYork1.png ***!
+  \*****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"6a2896e5d2502b6e500b.png\";\n\n//# sourceURL=webpack://dui-practice/./src/images/newYork/newYork1.png?");
+
+/***/ }),
+
+/***/ "./src/images/newYork/newYork2.png":
+/*!*****************************************!*\
+  !*** ./src/images/newYork/newYork2.png ***!
+  \*****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"aa2b1f84d94f4b3ee6b3.png\";\n\n//# sourceURL=webpack://dui-practice/./src/images/newYork/newYork2.png?");
+
+/***/ }),
+
+/***/ "./src/images/newYork/newYork3.png":
+/*!*****************************************!*\
+  !*** ./src/images/newYork/newYork3.png ***!
+  \*****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"1f05616018cbebaa046d.png\";\n\n//# sourceURL=webpack://dui-practice/./src/images/newYork/newYork3.png?");
+
+/***/ }),
+
+/***/ "./src/images/newYork/newYork4.png":
+/*!*****************************************!*\
+  !*** ./src/images/newYork/newYork4.png ***!
+  \*****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"13b01a7ee412bd5d989c.png\";\n\n//# sourceURL=webpack://dui-practice/./src/images/newYork/newYork4.png?");
+
+/***/ }),
+
+/***/ "./src/images/newYork/newYork5.png":
+/*!*****************************************!*\
+  !*** ./src/images/newYork/newYork5.png ***!
+  \*****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"ca2d0a0b46f45338d973.png\";\n\n//# sourceURL=webpack://dui-practice/./src/images/newYork/newYork5.png?");
 
 /***/ }),
 
@@ -136,7 +266,7 @@ eval("module.exports = __webpack_require__.p + \"07504c43529fe1600b11.png\";\n\n
   \************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _images_yellowstone_yellowstone1_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./images/yellowstone/yellowstone1.png */ \"./src/images/yellowstone/yellowstone1.png\");\n/* harmony import */ var _images_yellowstone_yellowstone2_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./images/yellowstone/yellowstone2.png */ \"./src/images/yellowstone/yellowstone2.png\");\n/* harmony import */ var _images_yellowstone_yellowstone3_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./images/yellowstone/yellowstone3.png */ \"./src/images/yellowstone/yellowstone3.png\");\n\n\n\n\nconst main = (() => {\n  const array = [\n    [\n      'Yellowstone',\n      [\n        [_images_yellowstone_yellowstone1_png__WEBPACK_IMPORTED_MODULE_0__, ['Lucas Gao', 'https://unsplash.com/@cestlucas']],\n        [_images_yellowstone_yellowstone2_png__WEBPACK_IMPORTED_MODULE_1__, ['Dan Meyers', 'https://unsplash.com/@dmey503']],\n        [_images_yellowstone_yellowstone3_png__WEBPACK_IMPORTED_MODULE_2__, ['Ashley Knedler', 'https://unsplash.com/@ashkned']],\n      ],\n    ],\n  ];\n\n  return { array };\n})();\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (main);\n\n\n//# sourceURL=webpack://dui-practice/./src/imagesAndLinksArray.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _images_yellowstone_yellowstone1_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./images/yellowstone/yellowstone1.png */ \"./src/images/yellowstone/yellowstone1.png\");\n/* harmony import */ var _images_yellowstone_yellowstone2_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./images/yellowstone/yellowstone2.png */ \"./src/images/yellowstone/yellowstone2.png\");\n/* harmony import */ var _images_yellowstone_yellowstone3_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./images/yellowstone/yellowstone3.png */ \"./src/images/yellowstone/yellowstone3.png\");\n/* harmony import */ var _images_grandCanyon_grandCanyon1_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./images/grandCanyon/grandCanyon1.png */ \"./src/images/grandCanyon/grandCanyon1.png\");\n/* harmony import */ var _images_grandCanyon_grandCanyon2_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./images/grandCanyon/grandCanyon2.png */ \"./src/images/grandCanyon/grandCanyon2.png\");\n/* harmony import */ var _images_grandCanyon_grandCanyon3_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./images/grandCanyon/grandCanyon3.png */ \"./src/images/grandCanyon/grandCanyon3.png\");\n/* harmony import */ var _images_grandCanyon_grandCanyon4_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./images/grandCanyon/grandCanyon4.png */ \"./src/images/grandCanyon/grandCanyon4.png\");\n/* harmony import */ var _images_lakeTahoe_lakeTahoe1_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./images/lakeTahoe/lakeTahoe1.png */ \"./src/images/lakeTahoe/lakeTahoe1.png\");\n/* harmony import */ var _images_lakeTahoe_lakeTahoe2_png__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./images/lakeTahoe/lakeTahoe2.png */ \"./src/images/lakeTahoe/lakeTahoe2.png\");\n/* harmony import */ var _images_lakeTahoe_lakeTahoe3_png__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./images/lakeTahoe/lakeTahoe3.png */ \"./src/images/lakeTahoe/lakeTahoe3.png\");\n/* harmony import */ var _images_lakeTahoe_lakeTahoe4_png__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./images/lakeTahoe/lakeTahoe4.png */ \"./src/images/lakeTahoe/lakeTahoe4.png\");\n/* harmony import */ var _images_newYork_newYork1_png__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./images/newYork/newYork1.png */ \"./src/images/newYork/newYork1.png\");\n/* harmony import */ var _images_newYork_newYork2_png__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./images/newYork/newYork2.png */ \"./src/images/newYork/newYork2.png\");\n/* harmony import */ var _images_newYork_newYork3_png__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./images/newYork/newYork3.png */ \"./src/images/newYork/newYork3.png\");\n/* harmony import */ var _images_newYork_newYork4_png__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./images/newYork/newYork4.png */ \"./src/images/newYork/newYork4.png\");\n/* harmony import */ var _images_newYork_newYork5_png__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./images/newYork/newYork5.png */ \"./src/images/newYork/newYork5.png\");\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nconst main = (() => {\n  const array = [\n    [\n      'Yellowstone',\n      [\n        [_images_yellowstone_yellowstone1_png__WEBPACK_IMPORTED_MODULE_0__, ['Lucas Gao', 'https://unsplash.com/@cestlucas']],\n        [_images_yellowstone_yellowstone2_png__WEBPACK_IMPORTED_MODULE_1__, ['Dan Meyers', 'https://unsplash.com/@dmey503']],\n        [_images_yellowstone_yellowstone3_png__WEBPACK_IMPORTED_MODULE_2__, ['Ashley Knedler', 'https://unsplash.com/@ashkned']],\n      ],\n    ],\n    [\n      'Grand Canyon',\n      [\n        [_images_grandCanyon_grandCanyon1_png__WEBPACK_IMPORTED_MODULE_3__, ['Alan Carrillo', 'https://unsplash.com/@acarrillo46']],\n        [_images_grandCanyon_grandCanyon2_png__WEBPACK_IMPORTED_MODULE_4__, ['Gert Boers', 'https://unsplash.com/@geboers']],\n        [_images_grandCanyon_grandCanyon3_png__WEBPACK_IMPORTED_MODULE_5__, ['Ammeer Basheer', 'https://unsplash.com/@24ameer']],\n        [_images_grandCanyon_grandCanyon4_png__WEBPACK_IMPORTED_MODULE_6__, ['Gilly', 'https://unsplash.com/@gillyberlin']],\n      ],\n    ],\n    [\n      'Lake Tahoe',\n      [\n        [_images_lakeTahoe_lakeTahoe1_png__WEBPACK_IMPORTED_MODULE_7__, ['Parth Thakker', 'https://unsplash.com/@thakkerparth16']],\n        [_images_lakeTahoe_lakeTahoe2_png__WEBPACK_IMPORTED_MODULE_8__, ['Mick Haupt', 'https://unsplash.com/@rocinante_11']],\n        [_images_lakeTahoe_lakeTahoe3_png__WEBPACK_IMPORTED_MODULE_9__, ['Mert Kahveci', 'https://unsplash.com/@mertkahveci']],\n        [_images_lakeTahoe_lakeTahoe4_png__WEBPACK_IMPORTED_MODULE_10__, ['Meritt Thomas', 'https://unsplash.com/@merittthomas']],\n      ],\n    ],\n    [\n      'New York',\n      [\n        [_images_newYork_newYork1_png__WEBPACK_IMPORTED_MODULE_11__, ['Luca Bravo', 'https://unsplash.com/@lucabravo']],\n        [_images_newYork_newYork2_png__WEBPACK_IMPORTED_MODULE_12__, ['Oliver Niblett', 'https://unsplash.com/@ojnibl']],\n        [_images_newYork_newYork3_png__WEBPACK_IMPORTED_MODULE_13__, ['Andre Benz', 'https://unsplash.com/@trapnation']],\n        [_images_newYork_newYork4_png__WEBPACK_IMPORTED_MODULE_14__, ['Redd', 'https://unsplash.com/@reddalec']],\n        [_images_newYork_newYork5_png__WEBPACK_IMPORTED_MODULE_15__, ['Jose Oh', 'https://unsplash.com/@joseoh']],\n      ],\n    ],\n    // [\n    //   'placeholder',\n    //   [\n    //     [placeholder1, ['', '']],\n    //     [placeholder2, ['', '']],\n    //     [placeholder3, ['', '']],\n    //     [placeholder4, ['', '']],\n    //   ],\n    // ],\n  ];\n\n  return { array };\n})();\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (main);\n\n\n//# sourceURL=webpack://dui-practice/./src/imagesAndLinksArray.js?");
 
 /***/ }),
 

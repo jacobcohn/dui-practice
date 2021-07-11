@@ -92,12 +92,16 @@ const initialDom = (() => {
   return { initiate };
 })();
 
-const regularDom = (() => {
-  let slideCounter = 0;
+const changeSlides = (() => {
+  let slideCounter;
   let allowedToChangeSlide = true;
 
   const imageWidth = 700;
   const transitionTime = 300;
+
+  const resetSlideCounter = () => {
+    slideCounter = 0;
+  };
 
   const changeImageWithTransition = () => {
     const amountOfPixelsTransformed = (slideCounter + 1) * imageWidth * -1;
@@ -174,16 +178,24 @@ const regularDom = (() => {
       }
     });
 
-    setInterval(() => {
+    const automaticallyChangeSlides = setInterval(() => {
       if (allowedToChangeSlide === true) {
         slideCounter += 1;
         changeSlide(specificArray);
       }
-    }, 6000);
+    }, 4000);
+
+    const observer = new MutationObserver(() => {
+      clearInterval(automaticallyChangeSlides);
+      observer.disconnect();
+    });
+
+    observer.observe(elements.imageSliderContainer, { childList: true });
   };
 
   const initiate = (specificArray) => {
-    changeSlide(specificArray); // transitionTime doesn't work bc it is the initial cssText
+    resetSlideCounter();
+    changeSlide(specificArray);
     events(specificArray);
   };
 
@@ -201,7 +213,7 @@ const main = (() => {
   const initiate = (title) => {
     const specificArray = findSpecificArrayWithTitle(title);
     initialDom.initiate(specificArray);
-    regularDom.initiate(specificArray);
+    changeSlides.initiate(specificArray);
   };
 
   return { initiate };
